@@ -1,0 +1,4 @@
+github.com/Sanchir01/go-shortener-proto v0.0.0-20250814211955-1a498ae24a9b h1:5HkucUNcf2qNe0d7R+4OIrakOcR7D1mYFxBY9JkdipA=
+github.com/Sanchir01/go-shortener-proto v0.0.0-20250814211955-1a498ae24a9b/go.mod h1:u6BYaysK2D2zpXSmKaKV3XLcZWFfU169bSuuhBsHmmQ=
+github.com/rookie-ninja/rk-grpc/v2 v2.2.22 h1:prPnZ6GDFejWgAP63CAEEyk6GFSyJsGF9T6fK1+x1hs=
+github.com/rookie-ninja/rk-grpc/v2 v2.2.22/go.mod h1:zNEHf1NTb16OoA7gkTisINqOxfNwqmlH6IUR3cpJg0k=
