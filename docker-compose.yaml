@@ -1,0 +1,15 @@
+
+services:
+  postgres_data:
+    restart: always
+    image: postgres:latest
+    ports:
+      - "5435:5432"
+    environment:
+      - POSTGRES_DB=test
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+
+
+volumes:
+  postgres_data:

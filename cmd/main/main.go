@@ -3,10 +3,13 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/Sanchir01/go-shortener-auth/internal/app"
+	"github.com/Sanchir01/go-shortener-auth/internal/feature/auth"
+	"google.golang.org/grpc"
 	"os"
 	"os/signal"
 	"syscall"
+
+	"github.com/Sanchir01/go-shortener-auth/internal/app"
 )
 
 func main() {
@@ -18,7 +21,8 @@ func main() {
 		panic(err)
 	}
 	fmt.Println(application.Cfg)
-
+	application.GRPCApp.MustStart(func(server *grpc.Server) {
+		auth.NewServer(server)
+	})
 	<-ctx.Done()
-
 }
