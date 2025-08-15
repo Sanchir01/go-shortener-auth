@@ -1,0 +1,12 @@
+grpc:
+  - name: greeter
+    port: 8080
+    enabled: true
+    enableReflection: true
+    gw:
+      enabled: true
+      port: 8081
+    sw:
+      enabled: true
+    prom:
+      enabled: true

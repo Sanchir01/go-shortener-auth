@@ -1,0 +1,5 @@
+env: "development"
+
+grpc:
+  port: "11011"
+  timeout: 360s
